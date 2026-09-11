@@ -16,13 +16,19 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<WithNavbar><HomePage /></WithNavbar>} />
+        <Route
+          path="/"
+          element={
+            <WithNavbar>
+              <HomePage />
+            </WithNavbar>
+          }
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       {/* Floating chat button — visible on all pages */}
       <FloatingChatButton />
-      <h1>welcome vedha
     </>
   );
 }
